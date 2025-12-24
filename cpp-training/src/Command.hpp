@@ -38,8 +38,10 @@ public:
             }
         }
         if (poseHandler.IsReverse()) {
+            poseHandler.Backward();
             poseHandler.TurnRight();
         } else {
+            poseHandler.Forward();
             poseHandler.TurnLeft();
         }
     }
@@ -57,8 +59,10 @@ public:
             }
         }
         if (poseHandler.IsReverse()) {
+            poseHandler.Backward();
             poseHandler.TurnLeft();
         } else {
+            poseHandler.Forward();
             poseHandler.TurnRight();
         }
     }
